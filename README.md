@@ -26,4 +26,5 @@ v1.0 功能:
     }
 
 图示:
+[github图示有问题，请点击这查看](http://blog.csdn.net/xingyeyongheng/article/details/54293603)  
 ![图示](http://github-image.oss-cn-hangzhou.aliyuncs.com/tmpdir--17_1_6_21_43_29.gif)
