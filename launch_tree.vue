@@ -93,6 +93,7 @@ let pageParams = {
 let vm = null
 
 export default {
+  name: 'launchTree',
   props: {
     list: {
       type: Array,

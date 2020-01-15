@@ -26,5 +26,78 @@ v1.0 功能:
     }
 
 图示:
-[github图示有问题，请点击这查看](http://blog.csdn.net/xingyeyongheng/article/details/54293603)  
-![图示](http://github-image.oss-cn-hangzhou.aliyuncs.com/tmpdir--17_1_6_21_43_29.gif)
+<img src = "https://github.com/Stephen1993/vue-datetime/blob/master/img/8lnm5-3tu3f.gif" display = "flex" width = "300px" height = "300px" >
+
+示例：
+```
+<template>
+  <div>
+    <edit-time></edit-time>
+    <launch-tree :list='list' :options='options'></launch-tree>
+  </div>
+</template>
+
+<script>
+import launchTree from '../components/launch_tree.vue'
+
+const COMPONENT_NAME = 'Login'
+let list = [
+  {
+    name: '一级目录', // 目录名字
+    isOpen: true, // 是否初始展开目录
+    hightLight: true, // 是否初始高亮
+    className: undefined, // 添加自定义样式
+    ...{}, // 其他用户额外参数
+    childs: [ // 二级目录
+      {
+        name: '二级目录1',
+        isOpen: false
+      },
+      {
+        name: '二级目录2'
+      },
+      {
+        name: '二级目录3'
+      }
+    ]
+  },
+  {
+    name: '二级目录', // 目录名字
+    isOpen: true, // 是否初始展开目录
+    hightLight: true, // 是否初始高亮
+    className: undefined, // 添加自定义样式
+    ...{}, // 其他用户额外参数
+    childs: [ // 二级目录
+      {
+        name: '二级目录1',
+        isOpen: false
+      },
+      {
+        name: '二级目录2'
+      },
+      {
+        name: '二级目录3'
+      }
+    ]
+  }
+]
+
+let options = {
+  callback: undefined // 自定义点击事件，callback(node)
+}
+
+export default {
+  name: COMPONENT_NAME,
+  data () {
+    return {
+      list: list,
+      options: options
+    }
+  },
+  components: {
+    launchTree
+  }
+}
+
+</script>
+```
