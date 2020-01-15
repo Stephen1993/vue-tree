@@ -32,7 +32,6 @@ v1.0 功能:
 ```
 <template>
   <div>
-    <edit-time></edit-time>
     <launch-tree :list='list' :options='options'></launch-tree>
   </div>
 </template>
