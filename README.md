@@ -26,7 +26,7 @@ v1.0 功能:
     }
 
 图示:
-<img src = "https://github.com/Stephen1993/vue-datetime/blob/master/img/8lnm5-3tu3f.gif" display = "flex" width = "300px" height = "300px" >
+<img src = "https://github.com/Stephen1993/vue-tree/blob/master/img/g6ift-is84s.gif" display = "flex" width = "300px" height = "500px" >
 
 示例：
 ```
